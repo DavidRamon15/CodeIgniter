@@ -19,7 +19,7 @@
                 <input type='text' name='anio' value='$peli->anio'/>
                 <input type='text' name='pais' value= '$peli->pais'/>
                 <input type='file' name='cartel' value='http://localhost/codeIgniter/".$peli->cartel."'/>
-                <img src='http://localhost/codeIgniter/".$peli->cartel."' alt='imagen no disponible' style='width:200px;'/>
+                <img src='base_url("$peli" [cartel]""' alt='imagen no disponible' style='width:200px;'/>
                 
                 ";
                 
