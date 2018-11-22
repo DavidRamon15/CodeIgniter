@@ -10,7 +10,7 @@ include_once("Seguridad.php");
         }
         public function showInsertarPelicula(){
             if($this->verificar()){
-                $data["vista"]= "insertar";
+                $data["vista"]= "Insertar";
                 $this->load->view("Template_admin",$data);            }
         }
         public function insertarPelicula(){
