@@ -18,7 +18,7 @@
         public function processFormLogin() {
             $usuario = $this->input->get_post("usuario");
             $pass = $this->input->get_post("password");
-            $resultado = $this->checkLogin($usuario, $pass);
+            $resultado = $this->UsuariosModel->checkLogin($usuario, $pass);
             if ($resultado == 0) { // Error: usuario o contraseña no existen
                 $data["vista"]= "FormLogin";
                 $this->load->view("Template_admin",$data);
